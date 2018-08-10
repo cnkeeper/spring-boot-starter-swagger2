@@ -13,7 +13,7 @@
     <modules>
         <module>spring-boot-swagger2ui-autoconfigure</module>
         <module>spring-boot-starter-swagger2ui</module>
-        <module>swagger2ui</module>
+        <module>swagger2-ui</module>
         <module>swagger2-web</module>
     </modules>
 
@@ -40,12 +40,12 @@
     </dependencyManagement>
 
     <build>
-        <swagger.http.resources.resources>
+        <resources>
             <resource>
-                <directory>src/main/swagger.http.resources.resources</directory>
+                <directory>src/main/resources</directory>
                 <filtering>true</filtering>
             </resource>
-        </swagger.http.resources.resources>
+        </resources>
         <testResources>
             <testResource>
                 <directory>src/test/swagger.http.resources.resources</directory>
@@ -90,7 +90,7 @@
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-swagger.http.resources.resources-plugin</artifactId>
+                <artifactId>maven-resources-plugin</artifactId>
                 <version>3.0.1</version>
                 <configuration>
                     <!-- 解决二进制文件被转码导致不可用的问题-->
@@ -100,17 +100,17 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <id>copy-swagger.http.resources.resources</id>
+                        <id>copy-resources</id>
                         <phase>package</phase>
                         <goals>
-                            <goal>copy-swagger.http.resources.resources</goal>
+                            <goal>copy-resources</goal>
                         </goals>
                         <configuration>
                             <encoding>UTF-8</encoding>
                             <outputDirectory>${project.build.directory}/${project.deploy}/conf</outputDirectory>
-                            <swagger.http.resources.resources>
+                            <resources>
                                 <resource>
-                                    <directory>src/main/swagger.http.resources.resources/</directory>
+                                    <directory>src/main/resources/</directory>
                                     <includes>
                                         <include>*.yml</include>
                                         <include>log4j2.xml</include>
@@ -121,28 +121,28 @@
                                         <include>*.properties</include>
                                     </includes>
                                 </resource>
-                            </swagger.http.resources.resources>
+                            </resources>
                         </configuration>
                     </execution>
                     <execution>
                         <id>copy-sh</id>
                         <phase>package</phase>
                         <goals>
-                            <goal>copy-swagger.http.resources.resources</goal>
+                            <goal>copy-resources</goal>
                         </goals>
                         <configuration>
                             <encoding>UTF-8</encoding>
                             <outputDirectory>${project.build.directory}/${project.deploy}/</outputDirectory>
-                            <swagger.http.resources.resources>
+                            <resources>
                                 <resource>
-                                    <directory>src/main/swagger.http.resources.resources/</directory>
+                                    <directory>src/main/resources/</directory>
                                     <includes>
                                         <include>*.sh</include>
                                         <include>*.bat</include>
                                         <include>*.txt</include>
                                     </includes>
                                 </resource>
-                            </swagger.http.resources.resources>
+                            </resources>
                         </configuration>
                     </execution>
                 </executions>

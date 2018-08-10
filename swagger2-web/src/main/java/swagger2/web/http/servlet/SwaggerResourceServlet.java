@@ -102,10 +102,6 @@ public class SwaggerResourceServlet extends HttpServlet {
         String resourcesPath = config.getInitParameter(ResoucesConstants.KEY_RESOURCEBASEPATH);
         this.resourcesBasePath = (null==resourcesPath?ResoucesConstants.PATH_RESOURCEBASEPATH:resourcesPath);
     }
-
-    private boolean isImg(String name){
-
-    }
 }
 
 

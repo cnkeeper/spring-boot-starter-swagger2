@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>swagger2ui</artifactId>
+    <artifactId>swagger2-ui</artifactId>
 
 
 
