@@ -11,8 +11,8 @@
 
 
     <modules>
-        <module>spring-boot-swagger2ui-autoconfigure</module>
-        <module>spring-boot-starter-swagger2ui</module>
+        <module>spring-boot-swagger2-autoconfigure</module>
+        <module>spring-boot-starter-swagger2</module>
         <module>swagger2-ui</module>
         <module>swagger2-web</module>
     </modules>

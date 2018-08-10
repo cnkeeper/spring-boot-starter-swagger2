@@ -2,16 +2,16 @@
   "groups": [
     {
       "name": "swagger2-ui",
-      "type": "spring.boot.swagger2ui.autoconfiguration.Swagger2UIProperties",
-      "sourceType": "spring.boot.swagger2ui.autoconfiguration.Swagger2UIProperties"
+      "type": "spring.boot.swagger2ui.autoconfigure.ui.Swagger2UIProperties",
+      "sourceType": "spring.boot.swagger2ui.autoconfigure.ui.Swagger2UIProperties"
     }
   ],
   "properties": [
     {
-      "name": "swagger2-ui.urlPath",
+      "name": "swagger2-ui.basePath",
       "type": "java.lang.String",
-      "description": "the url for browser swagger2-ui'page",
-      "sourceType": "spring.boot.swagger2ui.autoconfiguration.Swagger2UIProperties"
+      "description": "the url for browser swagger2-ui's page",
+      "sourceType": "spring.boot.swagger2ui.autoconfigure.ui.Swagger2UIProperties"
     }
   ],
   "hints": []

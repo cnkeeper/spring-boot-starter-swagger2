@@ -38,7 +38,7 @@ public class Swagger2UIAutoConfiguration {
     public ServletRegistrationBean registrationBean() {
         ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean();
         servletRegistrationBean.setServlet(new SwaggerResourceServlet());
-        String url = properties.getUrlPath() != null ? properties.getUrlPath() : DEFAULT_URL_PATH;
+        String url = properties.getBasePath() != null ? properties.getBasePath() : DEFAULT_URL_PATH;
         servletRegistrationBean.addUrlMappings(url + "/*");
         return servletRegistrationBean;
     }

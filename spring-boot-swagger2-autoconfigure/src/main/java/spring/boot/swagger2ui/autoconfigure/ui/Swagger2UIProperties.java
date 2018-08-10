@@ -13,13 +13,13 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class Swagger2UIProperties {
     public static final String SWAGGER2UI_PREFIX = "swagger2-ui";
 
-    private String urlPath;
+    private String basePath;
 
-    public String getUrlPath() {
-        return urlPath;
+    public String getBasePath() {
+        return basePath;
     }
 
-    public void setUrlPath(String urlPath) {
-        this.urlPath = urlPath;
+    public void setBasePath(String basePath) {
+        this.basePath = basePath;
     }
 }
