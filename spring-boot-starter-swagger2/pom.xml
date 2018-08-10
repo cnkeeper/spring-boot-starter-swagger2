@@ -15,7 +15,7 @@
     <dependencies>
         <dependency>
             <groupId>com.cnkeep.cn</groupId>
-            <artifactId>spring-boot-swagger2ui-autoconfigure</artifactId>
+            <artifactId>spring-boot-swagger2-autoconfigure</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

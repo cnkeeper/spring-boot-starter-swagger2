@@ -1,6 +1,5 @@
 package spring.boot.swagger2ui.autoconfigure;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
 /**
