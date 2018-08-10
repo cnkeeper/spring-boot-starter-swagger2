@@ -1,0 +1,15 @@
+/.setting/
+/.svn/
+.svn
+.git/
+.project
+*.class
+logs/
+*/target/
+*/.settings/
+*/.svn/
+*/.classpath
+*/.project
+.idea/
+target/
+*.iml
