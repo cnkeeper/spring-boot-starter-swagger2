@@ -4,15 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.cnkeep.cn</groupId>
-    <artifactId>spring-boot-starter-swagger2-samples</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.15.RELEASE</version>
     </parent>
+
+    <groupId>com.cnkeep.cn</groupId>
+    <artifactId>spring-boot-starter-swagger2-samples</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <!--重新定义jetty的版本，解决 missing EmbeddedServletContainerFactory bean.报错-->
+        <jetty.version>9.2.21.v20170120</jetty.version>
+    </properties>
+
 
     <dependencies>
         <dependency>
@@ -48,5 +54,10 @@
         </dependency>
 
 
+        <!--jetty依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jetty</artifactId>
+        </dependency>
     </dependencies>
 </project>

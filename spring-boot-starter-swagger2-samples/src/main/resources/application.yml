@@ -4,62 +4,13 @@ server:
   display-name: cnkeep
   servlet-path: /service/*
 
-datasource:
-  master:
-    driver: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/zhiyun_os??useSSL=false&autoReconnect=true&sessionVariables=FOREIGN_KEY_CHECKS=0&useUnicode=yes&characterEncoding=UTF-8
-    username: root
-    password: 123456
-    maxTotal: 200
-    maxIdle: 8
-    minIdle: 8
-    initialSize: 10
-    maxWaitMillis: 3000
-    validationQuery: select 1
-    testWhileIdle: true
-    testOnBorrow: false
-    testOnReturn: false
-
-#druid连接池监控配置
-druid:
-  monitor:
-    servlet-path: /druid-ui/* #监控地址
-    username: druid
-    password: druid
-
-#自定义配置
-project:
-  version: 1.0.0
-
-mybatis:
-  config-location: classpath:mybatis-config.xml
-  mapper-locations: classpath:com/cnkeep/springboot/chapter1/section1/mapper/*.xml
-
-#健康监控
-management:
-  security:
-    enabled: true
-security:
-  user:
-    name: admin
-    password: 123456
-
-shiro:
-    loginUrl: /login
-    loginVerificationCode: false
-    filters:
-        /login: anonymous
-        /logout: anonymous
-        /publics/**: anonymous
-        /swagger.json: anonymous
-        /**: anonymous
 logging:
   config: classpath:logback.xml
 
 #swagger配置
 swagger2-ui:
   enable: true
-  resourcePackage: com.cnkeep.springboot.chapter1.section1.resource
+  resourcePackage: spring.boot.swagger2ui.autoconfigure.resources
   basePath: /swagger-ui
 
 
