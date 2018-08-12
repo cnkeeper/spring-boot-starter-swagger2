@@ -8,9 +8,45 @@
   ],
   "properties": [
     {
+      "name": "swagger2-ui.enable",
+      "type": "java.lang.Boolean",
+      "description": "是否自动配置jersey,默认为false,为true时必须配置resourcePackage",
+      "sourceType": "spring.boot.swagger2ui.autoconfigure.ui.Swagger2UIProperties"
+    },
+    {
       "name": "swagger2-ui.basePath",
       "type": "java.lang.String",
-      "description": "the url for browser swagger2-ui's page",
+      "description": "swagger2-ui页面的访问路径，默认/swagger2-ui",
+      "sourceType": "spring.boot.swagger2ui.autoconfigure.ui.Swagger2UIProperties"
+    },
+    {
+      "name": "swagger2-ui.resourcePackage",
+      "type": "java.lang.String",
+      "description": "需要扫描的resource包",
+      "sourceType": "spring.boot.swagger2ui.autoconfigure.ui.Swagger2UIProperties"
+    },
+    {
+      "name": "swagger2-ui.configId",
+      "type": "java.lang.String",
+      "description": "configId",
+      "sourceType": "spring.boot.swagger2ui.autoconfigure.ui.Swagger2UIProperties"
+    },
+    {
+      "name": "swagger2-ui.title",
+      "type": "java.lang.String",
+      "description": "title",
+      "sourceType": "spring.boot.swagger2ui.autoconfigure.ui.Swagger2UIProperties"
+    },
+    {
+      "name": "swagger2-ui.version",
+      "type": "java.lang.String",
+      "description": "version",
+      "sourceType": "spring.boot.swagger2ui.autoconfigure.ui.Swagger2UIProperties"
+    },
+    {
+      "name": "swagger2-ui.contact",
+      "type": "java.lang.String",
+      "description": "contact",
       "sourceType": "spring.boot.swagger2ui.autoconfigure.ui.Swagger2UIProperties"
     }
   ],

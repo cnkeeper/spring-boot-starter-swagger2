@@ -5,14 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.cnkeep.cn</groupId>
-    <artifactId>spring-boot-swagger</artifactId>
+    <artifactId>spring-boot-swagger2</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
 
     <modules>
-        <module>spring-boot-swagger2-autoconfigure</module>
         <module>spring-boot-starter-swagger2</module>
+        <module>spring-boot-swagger2-autoconfigure</module>
+        <module>spring-boot-starter-swagger2-samples</module>
         <module>swagger2-ui</module>
         <module>swagger2-web</module>
     </modules>
@@ -201,7 +202,7 @@
             </plugin>
 
             <!--生成doc包-->
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>2.7</version>
@@ -213,7 +214,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 </project>

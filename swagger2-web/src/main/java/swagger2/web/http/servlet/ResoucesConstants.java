@@ -10,7 +10,7 @@ package swagger2.web.http.servlet;
 public final class ResoucesConstants {
     //静态资源路径
     public static final String KEY_RESOURCEBASEPATH = "resources_path";
-    public static final String PATH_RESOURCEBASEPATH = "swagger/http/swagger.http.resources.resources";
+    public static final String PATH_RESOURCEBASEPATH = "swagger/http/resources";
     public static final String PATH_CSS = "/css";
     public static final String PATH_IMAGES = "/images";
     public static final String PATH_LIB = "/lib";

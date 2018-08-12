@@ -2,10 +2,7 @@ package spring.boot.swagger2ui.autoconfigure.ui;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
+import org.springframework.boot.autoconfigure.condition.*;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -32,7 +29,6 @@ public class Swagger2UIAutoConfiguration {
 
 
     @Bean("swagger2UIServlet")
-    @ConditionalOnBean
     @ConditionalOnClass(swagger2.web.http.servlet.SwaggerResourceServlet.class)//SwaggerResourceServlet存在时才会装载该类
     @ConditionalOnMissingBean(type = {"swagger2.web.http.servlet.SwaggerResourceServlet"})//如果已经定义改类则此处不会再生成bean
     public ServletRegistrationBean registrationBean() {
