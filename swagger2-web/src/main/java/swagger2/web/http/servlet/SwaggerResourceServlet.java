@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServletResponse;
  * 方式2：代码动态注入
  * 	<pre>
  * 	    public class Swagger2UIConfiguration {
- * 	        {@linkplain @Bean}
+ * 	        &#064;Bean
  *	        public ServletRegistrationBean registrationBean() {
  *	            ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean();
  *	            servletRegistrationBean.setServlet(new SwaggerResourceServlet());
