@@ -35,7 +35,7 @@
                     </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.cnkeep.cn</groupId>
+            <groupId>com.github.TIME69</groupId>
             <artifactId>spring-boot-starter-swagger2</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
