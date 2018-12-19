@@ -1,8 +1,8 @@
 # swagger2 的springboot版本  
 
 # 功能介绍  
-  为使用Jersey替代Springmvc作为控制层的springboot项目提供swagger2自动集成支持(UI + API).  
-  
+  为使用Jersey替代Springmvc作为控制层的springboot项目提供swagger2自动集成支持(UI + API).    
+  ** 已通过Apache2.0 License 开源，欢迎大家积极完善**
 # 项目介绍
 > spring-boot-starter-swagger2  
 >* spring-boot-starter-swagger2: 根项目  
